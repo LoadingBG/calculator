@@ -19,10 +19,13 @@ public class Main {
                 if ("quit".equals(line) || "exit".equals(line)) {
                     break;
                 }
-                tokenize(line)
+
+                Expression.calculate(line).consume(r -> System.out.println("Result: " + r), System.out::println);
+
+                /*tokenize(line)
                         .andThen(Main::getNotation)
                         .andThen(Main::calculate)
-                        .consume(r -> System.out.println("Result: " + r), System.out::println);
+                        .consume(r -> System.out.println("Result: " + r), System.out::println);*/
             }
         }
     }

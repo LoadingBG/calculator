@@ -1,7 +1,7 @@
 package calc;
 
 enum TokenType {
-    NUM(-1),
+    NUM(10),
     ADD(1),
     SUB(1),
     MUL(2),
