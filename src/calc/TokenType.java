@@ -6,7 +6,7 @@ enum TokenType {
     SUB(1),
     MUL(2),
     DIV(2),
-    NEG(10),
+    NEG(8),
     OPEN_PAREN(0),
     CLOSE_PAREN(6);
 
